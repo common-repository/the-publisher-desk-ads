@@ -1,0 +1,39 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-tpd-block-tpd-ads  {
+  background: #fbfbfb;
+  color: $black;
+  margin: 0 auto;
+
+  &.alignwide {
+    margin-left: -80px;
+    margin-right: -80px; 
+  }
+  &.alignfull {
+    margin-left: calc( -100vw / 2 + 100% / 2);
+    margin-right: calc( -100vw / 2 + 100% / 2);
+    max-width: 100vw; 
+    text-align: center;
+  }
+  &.is-sticky{
+    position: sticky;
+    top: 100px;
+  }
+  &:not(.has-dsk):not(.has-mob) {
+    padding: 2rem;
+  }
+  @media screen and (min-width: 771px) {
+    &.has-dsk {
+      padding: 2rem;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    &.has-mob {
+      padding: 2rem 0;
+    }
+  }
+}

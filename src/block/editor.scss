@@ -1,0 +1,72 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-tpd-block-tpd-ads {
+  background: #f8f8f8;
+  color: $black;
+  margin: 0 auto;
+  padding: 2rem;
+  >div {
+    position: relative;
+    &:before {
+      content: "AD";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      font-size: 3em;
+      font-family: sans-serif;
+      color: #e3e3e3;
+    }
+  }
+  .medium_rectangle { max-width:300px; height:250px; }
+  .large_rectangle { max-width:336px; height:280px; }
+  .leaderboard { 
+    display: grid;
+    align-content: center;
+    width: 100%;
+    max-width:728px; 
+    min-height:90px; 
+    margin: 0 auto;
+    background: #ececec;
+  }
+  .large_skyscraper { max-width:300px; height:600px; }
+  input {
+    position: relative;
+    z-index: 12;
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border: none;
+    line-height: 2em;
+    border-radius: 0;
+    opacity: 0.2;
+    transition: all 0.4s;
+    &:focus {
+      opacity: 1;
+    }
+  }
+  &:hover {
+    input {
+      opacity: 1;
+    }
+  }
+  .components-base-control {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .components-base-control .components-base-control__field {
+    margin-bottom: 0;
+  }
+  .components-base-control + .components-base-control {
+    margin-bottom: 0;
+  }  
+}
+.tpd-ads-toggle-control{
+  padding:16px;
+}
